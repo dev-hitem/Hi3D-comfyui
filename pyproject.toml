@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Hi3D"
+version = "1.0.1"
+description = "ComfyUI custom nodes for Hi3D Image-to-3D API: generate 3D models (GLB) from images."
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.10"
+dependencies = [
+    "tos",
+    "aiohttp",
+]
+classifiers = [
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/dev-hitem/Hi3D-comfyui"
+"Bug Tracker" = "https://github.com/dev-hitem/Hi3D-comfyui/issues"
+
+[tool.comfy]
+# PublisherId: create a publisher at https://registry.comfy.org/ (shown after @ on your profile). Change if yours differs from the org slug.
+PublisherId = "hi3d"
+DisplayName = "Hi3D"
+# Optional square icon (max 400x400), e.g. raw.githubusercontent.com PNG/SVG
+Icon = "https://hitem3dstatic.zaohaowu.net/FE/static/img/20260429-161137.jpeg"
+Banner = "https://hitem3dstatic.zaohaowu.net/FE/static/img/20260429-161203.jpeg"
