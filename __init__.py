@@ -278,7 +278,7 @@ class ImageTo3DNode(io.ComfyNode):
                     tooltip="Scene preset. `general` is for common objects, `portrait` is for portrait/scene generation.",
                 ),
                 io.Combo.Input(
-                    "model", options=ALL_IMAGE_TO_3D_MODELS, default="hitem3dv1.5", optional=True,
+                    "model", options=ALL_IMAGE_TO_3D_MODELS, default="hitem3dv2.1", optional=True,
                     tooltip="3D generation model version. The node UI filters valid versions according to the selected scene.",
                 ),
                 io.Combo.Input(
@@ -354,7 +354,7 @@ class TextureNode(io.ComfyNode):
                 ),
                 io.Combo.Input(
                     "model", options=["hitem3dv2.1", "hitem3dv1.5", "hitem3dv2.0", "scene-portraitv1.5"],
-                    default="hitem3dv1.5", optional=True,
+                    default="hitem3dv2.1", optional=True,
                     tooltip="Model version used for texture generation.",
                 ),
                 io.Boolean.Input(
